@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inventory_bg"
+    tools:context=".InventoryMain">
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="394dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search products..."
+        app:layout_constraintBottom_toTopOf="@+id/productCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:background="@drawable/home_logo"
+        android:contentDescription="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <ImageButton
+        android:id="@+id/chat"
+        android:layout_width="41dp"
+        android:layout_height="32dp"
+        android:background="@drawable/chat_logo"
+        android:contentDescription="Chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inventory"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageButton
+        android:id="@+id/inventory"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:background="@drawable/inventory_logo"
+        android:contentDescription="Inventory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintStart_toEndOf="@+id/chat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:background="@drawable/profile_logo"
+        android:contentDescription="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inventory"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <ListView
+        android:id="@+id/productsListView"
+        android:layout_width="358dp"
+        android:layout_height="343dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:choiceMode="singleChoice"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+
+    <Button
+        android:id="@+id/sortButton"
+        android:layout_width="72dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/sort_icon"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="72dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="296dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/delete_icon"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/transactionButton"
+        android:layout_width="62dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/transaction_icon"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/productPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/poppins"
+        android:text="Brand"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/productsListView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="@font/poppins"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/productsListView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/productStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Size"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/productsListView"
+        app:layout_constraintStart_toEndOf="@+id/productPrice" />
+
+    <TextView
+        android:id="@+id/productStatus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Type"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/productsListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productStatus" />
+
+    <TextView
+        android:id="@+id/productCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-100dp"
+        android:layout_marginEnd="144dp"
+        android:fontFamily="@font/poppins"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/productsListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productPic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

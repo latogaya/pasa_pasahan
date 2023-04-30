@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trans_bg"
+    tools:context=".TransactionDetails">
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="User Name"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/poppins"
+        android:text="Transaction Details"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/et_buyer_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="KOKOAS2"
+        android:background="@drawable/border_thin_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_id" />
+
+    <TextView
+        android:id="@+id/et_transaction_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="DBTKOG"
+        android:background="@drawable/border_thin_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_id" />
+
+    <TextView
+        android:id="@+id/et_total_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="$128.00"
+        android:background="@drawable/border_thin_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_id" />
+
+    <TextView
+        android:id="@+id/et_trans_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="01/09/2023"
+        android:background="@drawable/border_thin_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_id" />
+
+    <TextView
+        android:id="@+id/tv_transaction_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Transaction ID"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_transaction_id3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="248dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Buyer ID"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_transaction_id4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Buyer Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_transaction_id6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="440dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Total Price"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_transaction_id7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="540dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Transaction Date"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/et_buyer_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="AMBRAIE POGI"
+        android:background="@drawable/border_thin_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transaction_id" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:background="@drawable/home_logo"
+        android:contentDescription="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <ImageButton
+        android:id="@+id/chat"
+        android:layout_width="57dp"
+        android:layout_height="37dp"
+        android:background="@drawable/chat_logo"
+        android:contentDescription="Chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inventory"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageButton
+        android:id="@+id/inventory"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:background="@drawable/inventory_logo"
+        android:contentDescription="Inventory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintStart_toEndOf="@+id/chat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="67dp"
+        android:layout_height="44dp"
+        android:background="@drawable/profile_logo"
+        android:contentDescription="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inventory"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
