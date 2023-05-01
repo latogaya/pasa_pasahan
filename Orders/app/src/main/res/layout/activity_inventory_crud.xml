@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trans_bg"
+    tools:context=".OrderCRUD">
+
+    <TextView
+        android:id="@+id/sellerFeedback2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="348dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Comments"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Item Rating"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/commentsFeedback"
+        android:layout_width="357dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_thin_rounded"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellerFeedback" />
+
+    <EditText
+        android:id="@+id/sellerFeedbackEdit2"
+        android:layout_width="159dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_thin_rounded"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellerFeedback" />
+
+    <EditText
+        android:id="@+id/itemFeedbackInsert"
+        android:layout_width="161dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_thin_rounded"
+
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellerFeedback" />
+
+    <TextView
+        android:id="@+id/sellerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Seller Name"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedbackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/poppins"
+        android:text="Feedback"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sellerFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Seller Rating"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/yellow"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Rate"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/yellow"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:background="@drawable/home_logo"
+        android:contentDescription="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <ImageButton
+        android:id="@+id/chat"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:background="@drawable/chat_logo"
+        android:contentDescription="Chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/order"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageButton
+        android:id="@+id/order"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cart_logo"
+        android:contentDescription="Inventory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintStart_toEndOf="@+id/chat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:background="@drawable/profile_logo"
+        android:contentDescription="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/order"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
